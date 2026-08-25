@@ -487,6 +487,9 @@ a {
 .hero__visual {
   position: relative;
   z-index: 2;
+  min-width: 0;
+  width: 100%;
+
 }
 
 .eyebrow {
@@ -1073,11 +1076,17 @@ a {
 .cta-section__content {
   position: relative;
   z-index: 2;
+  width: 100%;
   max-width: 900px;
+  min-width: 0;
 }
 
 .cta-section h2 {
-  font-size: clamp(68px, 9vw, 140px);
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(48px, 15vw, 72px);
+  line-height: .9;
+  letter-spacing: -3px;
 }
 
 .cta-section h2 span {
@@ -1385,13 +1394,18 @@ a {
   .hero {
     padding-top: 112px;
   }
+  
 
-  .hero h1 {
-    font-size: clamp(48px, 15vw, 68px);
-    letter-spacing: -4px;
-  }
+.hero h1 {
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(43px, 13.3vw, 62px);
+  line-height: .88;
+  letter-spacing: -3px;
+},
 
   .hero h1 span {
+    max-width: 100%;
     text-shadow: 3px 3px 0 var(--orange);
   }
 
@@ -1465,7 +1479,20 @@ a {
   .impact__media {
     min-height: 430px;
   }
+.cta-section__content {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+}
 
+.cta-section__content > p {
+  max-width: 100%;
+}
+
+.cta-section .btn {
+  width: 100%;
+  max-width: 100%;
+}
   .cta-section {
     min-height: 560px;
     padding: 90px 22px;
@@ -1490,7 +1517,27 @@ a {
     bottom: 16px;
   }
 }
+@media (max-width: 390px) {
+  .hero {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 
+  .hero h1 {
+    font-size: clamp(40px, 12.8vw, 50px);
+    letter-spacing: -2.5px;
+  }
+
+  .cta-section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .cta-section h2 {
+    font-size: clamp(46px, 14.5vw, 58px);
+    letter-spacing: -2.5px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
