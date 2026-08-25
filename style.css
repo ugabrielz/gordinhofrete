@@ -1084,13 +1084,18 @@ a {
 .cta-section h2 {
   width: 100%;
   max-width: 100%;
-  font-size: clamp(48px, 15vw, 72px);
-  line-height: .9;
-  letter-spacing: -3px;
+  font-size: clamp(46px, 12.5vw, 62px);
+  line-height: .88;
+  letter-spacing: -2.5px;
 }
 
 .cta-section h2 span {
-  color: var(--yellow);
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  font-size: 0.94em;
+  letter-spacing: -3px;
 }
 
 .cta-section__content > p:nth-of-type(2) {
