@@ -1074,40 +1074,35 @@ a {
 }
 
 .cta-section__content {
-  position: relative;
-  z-index: 2;
   width: 100%;
-  max-width: 900px;
+  max-width: 100%;
   min-width: 0;
 }
 
 .cta-section h2 {
   width: 100%;
   max-width: 100%;
-  font-size: clamp(46px, 12.5vw, 62px);
-  line-height: .88;
-  letter-spacing: -2.5px;
+  font-size: 0;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
-.cta-section h2 span {
+.cta-section h2 .cta-line {
   display: block;
   width: 100%;
   max-width: 100%;
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(44px, 13vw, 58px);
+  line-height: .9;
+  letter-spacing: -2.5px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cta-section h2 .cta-line--highlight {
   margin-top: 8px;
-  font-size: 0.94em;
-  letter-spacing: -3px;
-}
-
-.cta-section__content > p:nth-of-type(2) {
-  max-width: 650px;
-  margin-top: 24px;
-  color: rgba(255,255,255,.8);
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.cta-section .btn {
-  margin-top: 34px;
+  color: var(--yellow);
+  font-size: clamp(42px, 12vw, 54px);
 }
 
 .cta-section__bigtext {
