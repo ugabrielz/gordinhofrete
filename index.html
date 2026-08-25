@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gordinho Frete — mudanças residenciais e comerciais, entregas, logística e fretes em geral. Atendimento rápido pelo WhatsApp." />
+  <meta name="theme-color" content="#0b1f3a" />
+
+  <title>Gordinho Frete | Mudanças, Entregas e Logística</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__speed-lines loader__speed-lines--1"></div>
+    <div class="loader__speed-lines loader__speed-lines--2"></div>
+    <div class="loader__speed-lines loader__speed-lines--3"></div>
+
+    <div class="loader__scene">
+      <div class="loader__van" id="loaderVan">
+        <svg
+          class="loader__van-svg"
+          viewBox="0 0 430 230"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse class="van-shadow" cx="220" cy="205" rx="160" ry="14" />
+
+          <path
+            class="van-body"
+            d="M48 80 C48 63 61 50 78 50 H258 C282 50 298 58 314 76 L359 124 C372 138 380 150 380 166 V178 H48 Z"
+          />
+
+          <path class="van-detail" d="M48 153 H380 V179 H48 Z" />
+
+          <path
+            class="van-window"
+            d="M273 63 H298 C309 63 316 67 324 76 L359 118 H272 Z"
+          />
+
+          <rect class="van-window" x="215" y="64" width="45" height="54" rx="5" />
+          <path class="van-door" d="M202 55 V150 H269 V55" />
+          <rect class="van-handle" x="244" y="128" width="15" height="4" rx="2" />
+          <rect class="van-light" x="362" y="132" width="18" height="15" rx="5" />
+
+          <text class="van-logo van-logo--orange" x="73" y="97">GORDINHO</text>
+          <text class="van-logo van-logo--yellow" x="105" y="122">FRETE</text>
+
+          <g class="van-wheel van-wheel--back">
+            <circle cx="112" cy="178" r="34" />
+            <circle class="wheel-inner" cx="112" cy="178" r="18" />
+            <path class="wheel-line" d="M112 163V193" />
+            <path class="wheel-line" d="M97 178H127" />
+          </g>
+
+          <g class="van-wheel van-wheel--front">
+            <circle cx="318" cy="178" r="34" />
+            <circle class="wheel-inner" cx="318" cy="178" r="18" />
+            <path class="wheel-line" d="M318 163V193" />
+            <path class="wheel-line" d="M303 178H333" />
+          </g>
+        </svg>
+      </div>
+
+      <div class="loader__road"><span></span></div>
+
+      <div class="loader__message">
+        <strong>GORDINHO FRETE</strong>
+        <span>Preparando o caminho...</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <a class="brand" href="#inicio" aria-label="Gordinho Frete - início">
+      <span class="brand__g">GORDINHO</span>
+      <span class="brand__f">FRETE</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Navegação principal">
+      <a href="#servicos">Serviços</a>
+      <a href="#vantagens">Vantagens</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Contato</a>
+      <a class="nav-cta" href="https://wa.me/5517996755541?text=Olá!%20Quero%20solicitar%20um%20orçamento%20de%20frete." target="_blank" rel="noopener">
+          Pedir orçamento
+      </a>
+    </nav>
+
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__grid"></div>
+      <div class="hero__glow hero__glow--orange"></div>
+      <div class="hero__glow hero__glow--yellow"></div>
+
+      <div class="hero__content reveal">
+        <p class="eyebrow">São José do Rio Preto e região</p>
+
+        <h1>
+          Seu frete
+          <span>sem enrolação.</span>
+        </h1>
+
+        <p class="hero__text">
+          Mudanças residenciais e comerciais, entregas, logística e fretes em geral
+          com atendimento direto, cuidado com a carga e agilidade do início ao fim.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="https://wa.me/5517996755541?text=Olá!%20Quero%20solicitar%20um%20orçamento%20de%20frete." target="_blank" rel="noopener">
+            Solicitar orçamento
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <div class="hero__proof">
+          <div>
+            <strong>Residencial</strong>
+            <span>Mudanças com cuidado</span>
+          </div>
+          <div>
+            <strong>Comercial</strong>
+            <span>Transporte para empresas</span>
+          </div>
+          <div>
+            <strong>Logística</strong>
+            <span>Entregas e fretes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal reveal--delay">
+        <div class="hero-card parallax-card">
+          <img src="assets/gordinho-frete-referencia.jpeg" alt="Arte da Gordinho Frete com veículo e serviços oferecidos" />
+          <div class="hero-card__overlay"></div>
+          <div class="hero-card__tag">Atendimento rápido</div>
+        </div>
+
+        <div class="floating-card floating-card--one">
+          <span class="floating-card__dot"></span>
+          <div>
+            <small>WhatsApp</small>
+            <strong>(17) 99675-5541</strong>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card--two">
+          <small>ANTT / RNTRC</small>
+          <strong>057424033</strong>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#servicos" aria-label="Ir para serviços">
+        <span></span>
+        Role para conhecer
+      </a>
+    </section>
+
+    <section class="marquee" aria-label="Serviços">
+      <div class="marquee__track">
+        <span>MUDANÇAS RESIDENCIAIS</span><i></i>
+        <span>MUDANÇAS COMERCIAIS</span><i></i>
+        <span>ENTREGAS</span><i></i>
+        <span>LOGÍSTICA</span><i></i>
+        <span>FRETES EM GERAL</span><i></i>
+        <span>MUDANÇAS RESIDENCIAIS</span><i></i>
+        <span>MUDANÇAS COMERCIAIS</span><i></i>
+        <span>ENTREGAS</span><i></i>
+        <span>LOGÍSTICA</span><i></i>
+        <span>FRETES EM GERAL</span><i></i>
+      </div>
+    </section>
+
+    <section class="section services" id="servicos">
+      <div class="section-head reveal">
+        <p class="eyebrow">O que fazemos</p>
+        <h2>Do ponto A ao ponto B.<br><span>Do jeito certo.</span></h2>
+        <p>
+          Transporte pensado para quem precisa de praticidade, segurança e contato direto
+          com quem vai realizar o serviço.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <span class="service-card__number">01</span>
+          <div class="service-card__icon">⌂</div>
+          <h3>Mudanças residenciais</h3>
+          <p>Transporte de móveis, eletrodomésticos, caixas e pertences com organização e cuidado.</p>
+          <span class="service-card__line"></span>
+        </article>
+
+        <article class="service-card reveal reveal--delay-sm">
+          <span class="service-card__number">02</span>
+          <div class="service-card__icon">▦</div>
+          <h3>Mudanças comerciais</h3>
+          <p>Movimentação de escritórios, lojas, equipamentos, volumes e materiais de empresas.</p>
+          <span class="service-card__line"></span>
+        </article>
+
+        <article class="service-card service-card--featured reveal reveal--delay">
+          <span class="service-card__number">03</span>
+          <div class="service-card__icon">→</div>
+          <h3>Entregas e logística</h3>
+          <p>Coletas e entregas com rota alinhada, comunicação rápida e solução sob medida.</p>
+          <span class="service-card__line"></span>
+        </article>
+
+        <article class="service-card reveal reveal--delay-lg">
+          <span class="service-card__number">04</span>
+          <div class="service-card__icon">GF</div>
+          <h3>Fretes em geral</h3>
+          <p>Precisa levar algo e não sabe qual opção contratar? Fale direto e receba uma avaliação rápida.</p>
+          <span class="service-card__line"></span>
+        </article>
+      </div>
+    </section>
+
+    <section class="impact" id="vantagens">
+      <div class="impact__media">
+        <div class="impact__image" data-parallax="0.12"></div>
+      </div>
+
+      <div class="impact__content reveal">
+        <p class="eyebrow">Por que chamar o Gordinho?</p>
+        <h2>Frete bom é frete <span>bem combinado.</span></h2>
+        <p>
+          Sem formulários complicados e sem conversa atravessada. Você explica o que precisa,
+          informa origem e destino e recebe o direcionamento para o serviço.
+        </p>
+
+        <div class="benefit-list">
+          <div class="benefit">
+            <span>01</span>
+            <div>
+              <strong>Atendimento direto</strong>
+              <p>Você fala pelo WhatsApp e resolve os detalhes de forma rápida.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span>02</span>
+            <div>
+              <strong>Cuidado com a carga</strong>
+              <p>Organização e atenção durante coleta, transporte e entrega.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <span>03</span>
+            <div>
+              <strong>Serviço sob medida</strong>
+              <p>De uma entrega pontual até uma mudança completa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="como-funciona">
+      <div class="section-head section-head--center reveal">
+        <p class="eyebrow">Simples assim</p>
+        <h2>Seu frete em <span>3 passos.</span></h2>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card reveal">
+          <div class="process-card__top">
+            <span>01</span>
+            <i></i>
+          </div>
+          <h3>Chame no WhatsApp</h3>
+          <p>Envie origem, destino, o que será transportado e a data desejada.</p>
+        </article>
+
+        <article class="process-card reveal reveal--delay-sm">
+          <div class="process-card__top">
+            <span>02</span>
+            <i></i>
+          </div>
+          <h3>Receba a avaliação</h3>
+          <p>Os detalhes são alinhados e você recebe o orçamento para o serviço.</p>
+        </article>
+
+        <article class="process-card reveal reveal--delay">
+          <div class="process-card__top">
+            <span>03</span>
+            <i></i>
+          </div>
+          <h3>Combinou? É só carregar.</h3>
+          <p>No dia acertado, o transporte é realizado conforme o combinado.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contato">
+      <div class="cta-section__noise"></div>
+      <div class="cta-section__content reveal">
+        <p class="eyebrow eyebrow--light">Precisa de um frete?</p>
+        <h2>Chama o <span>Gordinho.</span></h2>
+        <p>
+          Mande uma mensagem agora e informe o que precisa transportar.
+          Quanto mais detalhes, mais rápido fica para avaliar o serviço.
+        </p>
+
+        <a class="btn btn--light" href="https://wa.me/5517996755541?text=Olá!%20Quero%20solicitar%20um%20orçamento%20de%20frete." target="_blank" rel="noopener">
+          Falar no WhatsApp
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="cta-section__bigtext" aria-hidden="true">GORDINHO FRETE</div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__brand">
+      <a class="brand brand--footer" href="#inicio">
+        <span class="brand__g">GORDINHO</span>
+        <span class="brand__f">FRETE</span>
+      </a>
+      <p>Mudanças, entregas, logística e fretes em geral.</p>
+    </div>
+
+    <div class="footer__info">
+      <div>
+        <span>WhatsApp</span>
+        <a href="https://wa.me/5517996755541" target="_blank" rel="noopener">(17) 99675-5541</a>
+      </div>
+      <div>
+        <span>CNPJ</span>
+        <strong>57.783.164/0001-50</strong>
+      </div>
+      <div>
+        <span>ANTT / RNTRC</span>
+        <strong>057424033</strong>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Gordinho Frete. Todos os direitos reservados.</span>
+      <span>Transporte com responsabilidade.</span>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5517996755541?text=Olá!%20Quero%20solicitar%20um%20orçamento%20de%20frete." target="_blank" rel="noopener" aria-label="Falar com Gordinho Frete no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.16 1.6 5.98L.05 24l6.23-1.64a11.9 11.9 0 0 0 5.79 1.48h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.49-8.43Zm-8.44 18.35h-.01a9.88 9.88 0 0 1-5.04-1.38l-.36-.21-3.7.97.99-3.61-.24-.37a9.87 9.87 0 0 1-1.52-5.3c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.13 1.03 7 2.9a9.84 9.84 0 0 1 2.9 7c0 5.45-4.44 9.89-9.9 9.89Zm5.42-7.41c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
